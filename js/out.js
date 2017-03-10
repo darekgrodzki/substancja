@@ -9442,7 +9442,7 @@ exports = module.exports = __webpack_require__(83)();
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n@keyframes slider {\n  0% {\n    left: 0%;\n    opacity: 0; }\n  4% {\n    left: 0%;\n    opacity: 1; }\n  20% {\n    left: 0%;\n    opacity: 1; }\n  24% {\n    left: 0%;\n    opacity: 0; }\n  25% {\n    left: -100%;\n    opacity: 0; }\n  26% {\n    left: -100%;\n    opacity: 0; }\n  30% {\n    left: -100%;\n    opacity: 1; }\n  45% {\n    left: -100%;\n    opacity: 1; }\n  49% {\n    left: -100%;\n    opacity: 0; }\n  50% {\n    left: -200%;\n    opacity: 0; }\n  54% {\n    left: -200%;\n    opacity: 1; }\n  70% {\n    left: -200%;\n    opacity: 1; }\n  74% {\n    left: -200%;\n    opacity: 0; }\n  75% {\n    left: -300%;\n    opacity: 0; }\n  79% {\n    left: -300%;\n    opacity: 1; }\n  95% {\n    left: -300%;\n    opacity: 1; }\n  99% {\n    left: -300%;\n    opacity: 0; }\n  100% {\n    left: -300%;\n    opacity: 0; } }\n\n#slider {\n  overflow: hidden;\n  width: 80%;\n  margin-left: auto;\n  margin-right: auto;\n  border-radius: 10px; }\n\n#slider figure img {\n  width: 25%;\n  float: left; }\n\n#slider figure {\n  position: relative;\n  width: 400%;\n  margin: 0;\n  left: 0;\n  text-align: left;\n  font-size: 0;\n  animation: 20s slider infinite; }\n\n.some {\n  height: 3000px;\n  background-color: grey; }\n\n.cube {\n  text-align: center;\n  margin: 0 auto;\n  display: block;\n  width: 100px;\n  height: 50px;\n  background-color: #2ecc71; }\n\n.default-state {\n  background: #27af61;\n  transform: rotateX(90deg);\n  transition: 2s;\n  height: 25px;\n  width: 100px;\n  line-height: 25px;\n  color: white; }\n\n.active-state {\n  background: #27af61;\n  transform: rotateX(0deg);\n  transition: 2s;\n  height: 25px;\n  line-height: 25px;\n  color: white;\n  width: 100px; }\n\n/* Container box to set the sides relative to */\n/* The two faces of the cube */\n", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\nbody {\n  background-color: #999999; }\n\n@keyframes slider {\n  0% {\n    left: 0;\n    opacity: 0; }\n  4% {\n    left: 0;\n    opacity: 1; }\n  20% {\n    left: 0;\n    opacity: 1; }\n  24% {\n    left: 0;\n    opacity: 0; }\n  25% {\n    left: -100%;\n    opacity: 0; }\n  26% {\n    left: -100%;\n    opacity: 0; }\n  30% {\n    left: -100%;\n    opacity: 1; }\n  45% {\n    left: -100%;\n    opacity: 1; }\n  49% {\n    left: -100%;\n    opacity: 0; }\n  50% {\n    left: -200%;\n    opacity: 0; }\n  54% {\n    left: -200%;\n    opacity: 1; }\n  70% {\n    left: -200%;\n    opacity: 1; }\n  74% {\n    left: -200%;\n    opacity: 0; }\n  75% {\n    left: -300%;\n    opacity: 0; }\n  79% {\n    left: -300%;\n    opacity: 1; }\n  95% {\n    left: -300%;\n    opacity: 1; }\n  99% {\n    left: -300%;\n    opacity: 0; }\n  100% {\n    left: -300%;\n    opacity: 0; } }\n\n#slider {\n  overflow: hidden;\n  width: 100%;\n  margin-left: auto;\n  margin-right: auto;\n  border-radius: 10px; }\n\n#slider figure img {\n  width: 25%;\n  float: left; }\n\n#slider figure {\n  position: relative;\n  width: 400%;\n  margin: 0;\n  left: 0;\n  text-align: left;\n  font-size: 0;\n  animation: 20s slider infinite; }\n\n.cube {\n  text-align: center;\n  margin: 0 auto;\n  display: block;\n  width: 100px;\n  height: 50px;\n  background-color: #2ecc71; }\n\n.default-state {\n  background: #27af61;\n  transform: rotateX(90deg);\n  transition: 2s;\n  height: 25px;\n  width: 100px;\n  line-height: 25px;\n  color: white; }\n\n.active-state {\n  background: #27af61;\n  transform: rotateX(0deg);\n  transition: 2s;\n  height: 25px;\n  line-height: 25px;\n  color: white;\n  width: 100px; }\n\n.container {\n  width: 80%;\n  margin: 0 auto;\n  display: block;\n  border-radius: 10%; }\n\n.one {\n  background-color: #CD72B3;\n  color: white;\n  padding: 30px;\n  border-radius: 20px;\n  width: 40%;\n  display: inline-block;\n  margin-left: 5%;\n  margin-right: 5%;\n  height: 250px; }\n  .one h1 {\n    font-size: 18px; }\n  .one p {\n    font-size: 12px; }\n\n.two {\n  background-color: #CDF845;\n  color: white;\n  padding: 30px;\n  border-radius: 20px;\n  width: 40%;\n  display: inline-block;\n  height: 250px;\n  margin-left: 5%;\n  margin-right: 5%; }\n  .two h1 {\n    font-size: 18px; }\n  .two p {\n    font-size: 12px; }\n\nul li {\n  display: inline-block;\n  margin-right: 22px;\n  font-size: 18px; }\n\nul {\n  margin-left: 100px; }\n\n.navi {\n  height: 100px;\n  line-height: 100px; }\n", ""]);
 
 // exports
 
@@ -22043,33 +22043,97 @@ document.addEventListener("DOMContentLoaded", function () {
         animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, cos.offsetTop, 2000, true);
     });
 
-    // let bb = document.querySelector('#flipto');
-    //
-    // bb.addEventListener("click", function(event) {
-    //   event.preventDefault();
-    //
-    //   var face = this.data("face");
-    //   let cube = document.querySelector('.cube');
-    //
-    //   if ( face == "bottom" ) {
-    //     cube.removeClass("flip-to-top").addClass("flip-to-bottom");
-    //     this.data("face", "top").text("Flip: to top");
-    //   } else {
-    //     cube.removeClass("flip-to-bottom").addClass("flip-to-top");
-    //     this.data("face", "bottom").text("Flip: to bottom");
-    //   }
-    // });
-
     _reactDom2.default.render(_react2.default.createElement(
         'div',
-        { id: 'slider' },
+        { className: 'container' },
         _react2.default.createElement(
-            'figure',
-            null,
-            _react2.default.createElement('img', { src: './img/slajd1-min.png' }),
-            _react2.default.createElement('img', { src: './img/slajd2-min.png' }),
-            _react2.default.createElement('img', { src: './img/slajd3-min.png' }),
-            _react2.default.createElement('img', { src: './img/slajd4-min.png' })
+            'div',
+            { id: 'slider' },
+            _react2.default.createElement(
+                'figure',
+                null,
+                _react2.default.createElement('img', { src: './img/slajd1-min.png' }),
+                _react2.default.createElement('img', { src: './img/slajd2-min.png' }),
+                _react2.default.createElement('img', { src: './img/slajd3-min.png' }),
+                _react2.default.createElement('img', { src: './img/slajd4-min.png' })
+            )
+        ),
+        _react2.default.createElement(
+            'div',
+            { className: 'navi' },
+            _react2.default.createElement(
+                'ul',
+                null,
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'HOME'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'OFERTA'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'PROMOCJE'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'PORTFOLIO'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'ZAM\xD3WIENIA'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'SUBSTANCJA +'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'KONTAKT'
+                )
+            )
+        ),
+        _react2.default.createElement(
+            'div',
+            { className: 'content' },
+            _react2.default.createElement(
+                'div',
+                { className: 'one' },
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'Witamy na stronie firmy Substancja.'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'Po\u0142\u0105czyli\u015Bmy potencja\u0142 dw\xF3ch substancji: agencji reklamowej i drukarni. Artystyczny \u015Bwiat kreacji mo\u017Ce wi\u0119c korzysta\u0107 z ca\u0142ej palety precyzyjnych technologii wyra\u017Cania my\u015Bli i koncepcji. Co to oznacza dla naszych klient\xF3w? Przede wszystkim ni\u017Csze koszty produkcji reklam (typu: stojaki roll up, banery reklamowe, naklejki, plakaty itd.) oraz du\u017C\u0105 oszcz\u0119dno\u015B\u0107 czasu. \u0141atwiej jest tak\u017Ce wyeliminowa\u0107 wszelkie problemy, wyst\u0119puj\u0105ce cz\u0119sto na linii agencja reklamowa - drukarnia. Naszym g\u0142\xF3wnym obszarem dzia\u0142ania jest Warszawa i jej okolice ale wsp\xF3\u0142pracujemy tak\u017Ce z wieloma firmami z ca\u0142ej Polski oraz z zagranicy. "Substancja" to:'
+                )
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: 'two' },
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'Druk wielkoformatowy'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'Nasza drukarnia wielkoformatowa specjalizuje si\u0119 w r\xF3\u017Cnego rodzaju stojakach reklamowych typu roll up, \u015Bcankach POP-UP oraz innych produktach gdzie wa\u017Cna jest przede wszystkim jako\u015B\u0107 druku. Oczywi\u015Bcie produkujemy tak\u017Ce banery reklamowe, naklejki oraz plakaty. Drukujemy na sprz\u0119cie marki Roland o maksymalnej rozdzielczo\u015Bci 1440 dpi. Zawsze korzystamy z wysokich rozdzielczo\u015Bci i odpowiednich profili kolorystycznych, dzi\u0119ki czemu uzyskujemy fotograficzn\u0105 jako\u015B\u0107 wydruk\xF3w oraz eliminujemy wszelakie wady, jak cho\u0107by paskowanie itp..'
+                )
+            ),
+            _react2.default.createElement('div', { className: 'three' }),
+            _react2.default.createElement('div', { className: 'four' })
         )
     ), document.getElementById('app'));
 
