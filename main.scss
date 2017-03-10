@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@keyframes slider {
+0% { left: 0%; opacity: 0;}
+4% { left: 0%; opacity: 1;}
+20% { left: 0%; opacity: 1}
+24% { left: 0%; opacity: 0}
+25% { left: -100%; opacity: 0}
+26% { left: -100%; opacity: 0}
+30% { left: -100%; opacity: 1}
+45% { left: -100%; opacity: 1}
+49% { left: -100%; opacity: 0}
+50% { left: -200%; opacity: 0}
+54% { left: -200%; opacity: 1}
+70% { left: -200%; opacity: 1}
+74% { left: -200%; opacity: 0}
+75% { left: -300%; opacity: 0}
+79% { left: -300%; opacity: 1}
+95% { left: -300%; opacity: 1}
+99% { left: -300%; opacity: 0}
+100% {left: -300%; opacity: 0}
+}
+
+
+#slider { overflow: hidden; width: 80%; margin-left: auto; margin-right: auto; border-radius: 10px;}
+#slider figure img { width: 25%; float: left; }
+#slider figure {
+  position: relative;
+  width: 400%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slider infinite;
+}
+
+.some {
+  height: 3000px;
+  background-color: grey;
+}
+
+
+
+
+
+//
+// h1 {
+//   font-size: 20px;
+//   text-align: center;
+//   margin-top: 40px;
+// }
+//
+.cube {
+	  text-align: center;
+  	margin: 0 auto;
+    display: block;
+    width: 100px;
+    height: 50px;
+    background-color: #2ecc71;
+    // transform: transform-style(preserve-3d);
+
+}
+// .default-state, .active-state {
+//   background: #2ecc71;
+//
+//   font-size: 16px;
+//   text-transform: uppercase;
+//   color: #fff;
+//   line-height: 40px;
+//   transform: transition(background 250ms ease);
+// }
+//
+// .default-state, .active-state {
+//   background: #2ecc71;
+//
+//   font-size: 16px;
+//   text-transform: uppercase;
+//   color: #fff;
+//   line-height: @cube-height;
+//   .transition(background 250ms ease);
+// }
+
+.default-state {
+  background: darken(#2ecc71, 7%);
+  transform: rotateX(90deg);
+  transition: 2s;
+  height: 25px;
+  width: 100px;
+  line-height: 25px;
+  color: white;
+  // position: absolute;
+  // top: -25px;
+
+
+}
+// .default-state {
+// 	  transform:translateZ(50px);
+// }
+//
+.active-state {
+  background: darken(#2ecc71, 7%);
+  transform: rotateX(0deg);
+  transition: 2s;
+  height: 25px;
+  line-height: 25px;
+  color: white;
+  width: 100px;
+  // position: absolute;
+
+
+}
+
+// .default-state {
+// 	  transform: translateZ(20px);
+// }
+//
+// .flip-to-top .active-state {
+// 	  transform:(rotateX(90deg) translateZ(60px));
+// }
+//
+// .flip-to-bottom .active-state {
+// 	  transform:(rotateX(-90deg) translateZ(-50px));
+// }
+//
+// /* Rotate the cube */
+// .cube.flip-to-top:hover {
+// 	  transform: rotateX(-89deg);
+// }
+//
+// .cube.flip-to-bottom:hover {
+// 	  transform: rotateX(89deg);
+// }
+
+
+
+/* Container box to set the sides relative to */
+
+
+/* The two faces of the cube */
+
+
+
+
+// $cube-width: 250px;
+// $cube-height: 100px;
+//
+// /* CORE CSS */
+// body {
+//   transform: perspective(1000px);
+// }
+//
+// /* Container box to set the sides relative to */
+// .cube {
+// 	  width: $cube-width;
+//   	height: $cube-height;
+// 	  transform: transition(all 250ms ease);
+// 	  transform-style: preserve-3d;
+// }
+//
+// /* The two faces of the cube */
+// .default-state, .active-state {
+//   	height: $cube-height;
+// }
+//
+// /* Position the faces */
+// .default-state {
+// 	  transform: translateZ($cube-height/2);
+// }
+//
+// .flip-to-top .active-state {
+// 	  transform:rotateX(90deg);
+// 		transform: translateZ($cube-height*1.5);
+// }
+//
+// .flip-to-bottom .active-state {
+// 	  transform: rotateX(-90deg);
+// 		transform: translateZ(-50px);
+// }
+//
+// /* Rotate the cube */
+// .cube.flip-to-top:hover {
+// 	  transform: rotateX(-89deg);
+// }
+//
+// .cube.flip-to-bottom:hover {
+// 	  transform: rotateX(89deg);
+// }
+// /* END CORE CSS */
+//
+//
+// /* Demo styling */
+// body {
+//   font-family: 'Montserrat', sans-serif;
+//   font-weight: 400;
+//   margin: 70px;
+//   background: #f1f1f1;
+// }
+//
+// h1 {
+//   font-size: 20px;
+//   text-align: center;
+//   margin-top: 40px;
+// }
+//
+// .cube {
+// 	  text-align: center;
+//   	margin: 0 auto;
+// }
+//
+// .default-state, .active-state {
+//   background: #2ecc71;
+//
+//   font-size: 16px;
+//   text-transform: uppercase;
+//   color: #fff;
+//   line-height: $cube-height;
+//   transform: transition(background 250ms ease);
+// }
+//
+// .cube:hover .default-state {
+//   background: darken(#2ecc71, 7%);
+// }
+//
+// .active-state {
+//   background: darken(#2ecc71, 7%);
+// }
+//
+// #flipto {
+//   display: block;
+//   text-align: center;
+//   text-decoration: none;
+//   margin-top: 20px;
+//   color: #ccc;
+// }
