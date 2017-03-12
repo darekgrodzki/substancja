@@ -129,26 +129,50 @@ body {
     width: 100px;
     height: 50px;
     background-color: #2ecc71;
+    perspective: 2000px;
 }
 
+.default-state1 {
+    background: darken(#2ecc71, 7%);
+    transform: translate(0, 25px) rotateX(90deg);
+    transition: 250ms;
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    color: white;
+
+}
+
+.active-state1 {
+    // background: darken(#2ecc71, 7%);
+    transform: rotateX(0deg);
+    transition: 250ms;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    width: 100px;
+
+}
 .default-state {
     background: darken(#2ecc71, 7%);
-    transform: rotateX(90deg);
-    transition: 2s;
-    height: 25px;
+    transform: translate(0, -75px) rotateX(-90deg);
+    transition: 250ms;
+    height: 50px;
     width: 100px;
-    line-height: 25px;
+    line-height: 50px;
     color: white;
+
 }
 
 .active-state {
-    background: darken(#2ecc71, 7%);
-    transform: rotateX(0deg);
-    transition: 2s;
-    height: 25px;
-    line-height: 25px;
+    // background: darken(#2ecc71, 7%);
+    transform: translate(0, -50px) rotateX(0deg);
+    transition: 250ms;
+    height: 50px;
+    line-height: 50px;
     color: white;
     width: 100px;
+
 }
 
 .container {
@@ -185,7 +209,7 @@ body {
     border-radius: 20px;
     width: 40%;
     display: inline-block;
-    height: 250px;
+    height: 240px;
     margin-left: 5%;
     margin-right: 5%;
 

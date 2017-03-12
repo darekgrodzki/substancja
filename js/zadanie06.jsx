@@ -75,14 +75,14 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>, document.getElementById('app'));
 
     let bb = document.querySelector('.butt');
-    let active = document.querySelector('.active-state');
-    let defaul = document.querySelector('.default-state');
+    let active = document.querySelector('.first');
+    let defaul = document.querySelector('.second');
 
     bb.addEventListener('click', function(event) {
         event.preventDefault();
 
-        active.classList.toggle('active-state');
-        active.classList.toggle('default-state');
+        active.classList.toggle('active-state1');
+        active.classList.toggle('default-state1');
         defaul.classList.toggle('active-state');
         defaul.classList.toggle('default-state');
     })
