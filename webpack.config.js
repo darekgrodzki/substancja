@@ -1,5 +1,5 @@
 module.exports = {
-    entry: "./js/zadanie06.jsx",
+    entry: "./js/main.jsx",
     output: {
         filename: "js/out.js"
     },
@@ -10,7 +10,7 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 query: {
-                    presets: ['es2015','react']
+                    presets: ['es2015','stage-2','react']
                 }
             },
             {

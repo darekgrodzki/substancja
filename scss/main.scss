@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+  font-size: 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+body{
+
+
+}
+.slider{
+  width:100%;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 450px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+
+}
+
+
+
+.default-state1 {
+
+    transform: translate(0, -50%) rotateX(90deg);
+    transition: 500ms;
+    height: 100%;
+    width: 100px;
+    line-height: 60px;
+    color: white;
+    background-color: rgb(198, 205, 61);
+    cursor: default;
+
+
+
+}
+
+.active-state1 {
+
+    transform: rotateX(0deg);
+    transition: 500ms;
+    height: 100%;
+    line-height: 60px;
+    color: white;
+    width: 100px;
+    background-color: rgb(198, 205, 61);
+    cursor: default;
+    // -webkit-box-shadow: 0px 3px 7px 0px rgba(61,51,61,1);
+    // -moz-box-shadow: 0px 3px 7px 0px rgba(61,51,61,1);
+    // box-shadow: 0px 3px 7px 0px rgba(61,51,61,1);
+
+}
+.default-state {
+
+    transform: translate(0, -50%) rotateX(-90deg);
+    transition: 500ms;
+    height: 100%;
+    width: 100px;
+    line-height: 60px;
+    color: #666666;
+    background-color: rgb(198, 205, 61);
+    cursor: default;
+
+}
+
+.active-state {
+
+
+    transform: translate(0, -100%) rotateX(0deg);
+    transition: 500ms;
+    height: 100%;
+    line-height: 60px;
+    color: #666666;
+    width: 100px;
+    background-color: rgb(198, 205, 61);
+    cursor: default;
+}
+.shadow{
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(61,51,61,1);
+  -moz-box-shadow: 0px 3px 7px 0px rgba(61,51,61,1);
+  box-shadow: 0px 3px 7px 0px rgba(61,51,61,1);
+}
+.shadowNone{
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(61,51,61,0);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(61,51,61,0);
+  box-shadow: 0px 0px 0px 0px rgba(61,51,61,0);
+}
+.cube:hover .default-state1{
+  background-color: darken(#c6cd3d, 10%);
+}
+
+// .active-state1 .first{
+//   -webkit-box-shadow: 0px 3px 7px 0px rgba(61,51,61,1);
+//   -moz-box-shadow: 0px 3px 7px 0px rgba(61,51,61,1);
+//   box-shadow: 0px 3px 7px 0px rgba(61,51,61,1);
+// }
+
+
+
+.container {
+    width: 80%;
+
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.cube {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    height: 60px;
+    transition: 800ms;
+
+}
+
+ul li{
+
+  display: flex;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+.header{
+
+  // display: flex;
+  // margin: 0 auto;
+  // justify-content: space-between;
+  // align-items: center;
+  // padding-left: 300px;
+  // padding-top: 25px;
+  width: 100%;
+  // border: 1px solid grey;
+
+margin-top: 40px;
+  background-color: rgb(198, 205, 61);
+  height: 60px;
+}
+ul{
+
+  display: flex;
+  // justify-content: space-between;
+  // border: 1px solid grey;
+  // padding-left: 300px;
+
+
+
+  // border: 1px solid grey;
+}
+.navi{
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+
+  // border: 1px solid grey;
+  // border-radius: 10px;
+
+}
+.navi img{
+height: 35px;
+width: auto;
+}
+.three{
+  background-color: rgb(198, 205, 61);
+  height: 30px;
+}
+.four{
+  background-color: rgba(198, 205, 61, 0.9);
+  padding: 20px;
+  font-size: 1rem;
+
+  color: white;
+  height: 150px;
+  width: 400px;
+  margin-top: 150px;
+  margin-right: 12%;
+  margin-bottom: 5%;
+}
+
+.footer{
+  background-color: rgb(198, 205, 61);
+  height: 75px;
+  margin-top: 50px;
+
+}
+article{
+  background-color: rgb(236, 236, 236);
+  width: 30%;
+  font-size: 1.5rem;
+  height: 400px;
+  padding: 20px;
+  font-weight: 300;
+  margin-top: 75px;
+
+}
+@media (max-width: 1000px) {
+.container {
+width: 100%;
+flex-direction: column;
+}
+.navi{
+  width: 100%;
+  img{
+    margin-left: 30px;
+  }
+}
+}
+.header2 img {
+  display: block;
+  margin: 100px auto;
+  width: 600px;
+}
+.oferta{
+  height: 1000px;
+}

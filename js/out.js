@@ -9423,8 +9423,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./main.scss", function() {
-			var newContent = require("!!./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./main.scss");
+		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./main.scss", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./main.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -9439,10 +9439,11 @@ if(false) {
 
 exports = module.exports = __webpack_require__(83)();
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Ubuntu);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Ubuntu:300);", ""]);
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\nbody {\n  background-color: #999999; }\n\n@keyframes slider {\n  0% {\n    left: 0;\n    opacity: 0; }\n  4% {\n    left: 0;\n    opacity: 1; }\n  20% {\n    left: 0;\n    opacity: 1; }\n  24% {\n    left: 0;\n    opacity: 0; }\n  25% {\n    left: -100%;\n    opacity: 0; }\n  26% {\n    left: -100%;\n    opacity: 0; }\n  30% {\n    left: -100%;\n    opacity: 1; }\n  45% {\n    left: -100%;\n    opacity: 1; }\n  49% {\n    left: -100%;\n    opacity: 0; }\n  50% {\n    left: -200%;\n    opacity: 0; }\n  54% {\n    left: -200%;\n    opacity: 1; }\n  70% {\n    left: -200%;\n    opacity: 1; }\n  74% {\n    left: -200%;\n    opacity: 0; }\n  75% {\n    left: -300%;\n    opacity: 0; }\n  79% {\n    left: -300%;\n    opacity: 1; }\n  95% {\n    left: -300%;\n    opacity: 1; }\n  99% {\n    left: -300%;\n    opacity: 0; }\n  100% {\n    left: -300%;\n    opacity: 0; } }\n\n#slider {\n  overflow: hidden;\n  width: 100%;\n  margin-left: auto;\n  margin-right: auto;\n  border-radius: 10px; }\n\n#slider figure img {\n  width: 25%;\n  float: left; }\n\n#slider figure {\n  position: relative;\n  width: 400%;\n  margin: 0;\n  left: 0;\n  text-align: left;\n  font-size: 0;\n  animation: 20s slider infinite; }\n\n.cube {\n  text-align: center;\n  margin: 0 auto;\n  display: block;\n  width: 100px;\n  height: 50px;\n  background-color: #2ecc71;\n  perspective: 2000px; }\n\n.default-state1 {\n  background: #27af61;\n  transform: translate(0, 25px) rotateX(90deg);\n  transition: 250ms;\n  height: 50px;\n  width: 100px;\n  line-height: 50px;\n  color: white; }\n\n.active-state1 {\n  transform: rotateX(0deg);\n  transition: 250ms;\n  height: 50px;\n  line-height: 50px;\n  color: white;\n  width: 100px; }\n\n.default-state {\n  background: #27af61;\n  transform: translate(0, -75px) rotateX(-90deg);\n  transition: 250ms;\n  height: 50px;\n  width: 100px;\n  line-height: 50px;\n  color: white; }\n\n.active-state {\n  transform: translate(0, -50px) rotateX(0deg);\n  transition: 250ms;\n  height: 50px;\n  line-height: 50px;\n  color: white;\n  width: 100px; }\n\n.container {\n  width: 80%;\n  margin: 0 auto;\n  display: block;\n  border-radius: 10%; }\n\n.one {\n  background-color: #CD72B3;\n  color: white;\n  padding: 30px;\n  border-radius: 20px;\n  width: 40%;\n  display: inline-block;\n  margin-left: 5%;\n  margin-right: 5%;\n  height: 250px; }\n  .one h1 {\n    font-size: 18px; }\n  .one p {\n    font-size: 12px; }\n\n.two {\n  background-color: #CDF845;\n  color: white;\n  padding: 30px;\n  border-radius: 20px;\n  width: 40%;\n  display: inline-block;\n  height: 240px;\n  margin-left: 5%;\n  margin-right: 5%; }\n  .two h1 {\n    font-size: 18px; }\n  .two p {\n    font-size: 12px; }\n\nul li {\n  display: inline-block;\n  margin-right: 22px;\n  font-size: 18px; }\n\nul {\n  margin-left: 100px; }\n\n.navi {\n  height: 100px;\n  line-height: 100px; }\n", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\nhtml {\n  font-size: 10px;\n  font-family: 'Ubuntu', sans-serif; }\n\n.slider {\n  width: 100%;\n  margin: 0 auto;\n  background-size: cover;\n  background-position: center;\n  background-repeat: no-repeat;\n  height: 450px;\n  display: flex;\n  flex-flow: column;\n  align-items: flex-end;\n  justify-content: flex-start; }\n\n.default-state1 {\n  transform: translate(0, -50%) rotateX(90deg);\n  transition: 500ms;\n  height: 100%;\n  width: 100px;\n  line-height: 60px;\n  color: white;\n  background-color: #c6cd3d;\n  cursor: default; }\n\n.active-state1 {\n  transform: rotateX(0deg);\n  transition: 500ms;\n  height: 100%;\n  line-height: 60px;\n  color: white;\n  width: 100px;\n  background-color: #c6cd3d;\n  cursor: default; }\n\n.default-state {\n  transform: translate(0, -50%) rotateX(-90deg);\n  transition: 500ms;\n  height: 100%;\n  width: 100px;\n  line-height: 60px;\n  color: #666666;\n  background-color: #c6cd3d;\n  cursor: default; }\n\n.active-state {\n  transform: translate(0, -100%) rotateX(0deg);\n  transition: 500ms;\n  height: 100%;\n  line-height: 60px;\n  color: #666666;\n  width: 100px;\n  background-color: #c6cd3d;\n  cursor: default; }\n\n.shadow {\n  -webkit-box-shadow: 0px 3px 7px 0px #3d333d;\n  -moz-box-shadow: 0px 3px 7px 0px #3d333d;\n  box-shadow: 0px 3px 7px 0px #3d333d; }\n\n.shadowNone {\n  -webkit-box-shadow: 0px 0px 0px 0px rgba(61, 51, 61, 0);\n  -moz-box-shadow: 0px 0px 0px 0px rgba(61, 51, 61, 0);\n  box-shadow: 0px 0px 0px 0px rgba(61, 51, 61, 0); }\n\n.cube:hover .default-state1 {\n  background-color: #a5ab2c; }\n\n.container {\n  width: 80%;\n  margin: 0 auto;\n  background-color: white;\n  display: flex;\n  justify-content: space-between;\n  align-items: center; }\n\n.cube {\n  text-align: center;\n  margin: 0 auto;\n  display: block;\n  width: 100px;\n  height: 60px;\n  transition: 800ms; }\n\nul li {\n  display: flex;\n  font-size: 1.2rem;\n  margin-right: 10px; }\n\n.header {\n  width: 100%;\n  margin-top: 40px;\n  background-color: #c6cd3d;\n  height: 60px; }\n\nul {\n  display: flex; }\n\n.navi {\n  height: 100%;\n  width: 80%;\n  margin: 0 auto;\n  display: flex;\n  margin: 0 auto;\n  justify-content: space-between;\n  align-items: center; }\n\n.navi img {\n  height: 35px;\n  width: auto; }\n\n.three {\n  background-color: #c6cd3d;\n  height: 30px; }\n\n.four {\n  background-color: rgba(198, 205, 61, 0.9);\n  padding: 20px;\n  font-size: 1rem;\n  color: white;\n  height: 150px;\n  width: 400px;\n  margin-top: 150px;\n  margin-right: 12%;\n  margin-bottom: 5%; }\n\n.footer {\n  background-color: #c6cd3d;\n  height: 75px;\n  margin-top: 50px; }\n\narticle {\n  background-color: #ececec;\n  width: 30%;\n  font-size: 1.5rem;\n  height: 400px;\n  padding: 20px;\n  font-weight: 300;\n  margin-top: 75px; }\n\n@media (max-width: 1000px) {\n  .container {\n    width: 100%;\n    flex-direction: column; }\n  .navi {\n    width: 100%; }\n    .navi img {\n      margin-left: 30px; } }\n\n.header2 img {\n  display: block;\n  margin: 100px auto;\n  width: 600px; }\n\n.oferta {\n  height: 1000px; }\n", ""]);
 
 // exports
 
@@ -22005,151 +22006,649 @@ var _reactDom = __webpack_require__(79);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _Header = __webpack_require__(189);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 __webpack_require__(81);
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    function animate(elem, style, unit, from, to, time, prop) {
-        if (!elem) {
-            return;
-        }
-        var start = new Date().getTime(),
-            timer = setInterval(function () {
-            var step = Math.min(1, (new Date().getTime() - start) / time);
-            if (prop) {
-                elem[style] = from + step * (to - from) + unit;
-            } else {
-                elem.style[style] = from + step * (to - from) + unit;
-            }
-            if (step === 1) {
-                clearInterval(timer);
-            }
-        }, 25);
-        if (prop) {
-            elem[style] = from + unit;
-        } else {
-            elem.style[style] = from + unit;
-        }
-    }
-
-    var butt = document.querySelector('.butt');
-
-    butt.addEventListener('click', function (event) {
-
-        event.preventDefault();
-        var cos = document.querySelector('.some1');
-        animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, cos.offsetTop, 2000, true);
-    });
-
     _reactDom2.default.render(_react2.default.createElement(
         'div',
-        { className: 'container' },
-        _react2.default.createElement(
-            'div',
-            { id: 'slider' },
-            _react2.default.createElement(
-                'figure',
-                null,
-                _react2.default.createElement('img', { src: './img/slajd1-min.png' }),
-                _react2.default.createElement('img', { src: './img/slajd2-min.png' }),
-                _react2.default.createElement('img', { src: './img/slajd3-min.png' }),
-                _react2.default.createElement('img', { src: './img/slajd4-min.png' })
-            )
-        ),
-        _react2.default.createElement(
-            'div',
-            { className: 'navi' },
-            _react2.default.createElement(
-                'ul',
-                null,
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'HOME'
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'OFERTA'
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'PROMOCJE'
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'PORTFOLIO'
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'ZAM\xD3WIENIA'
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'SUBSTANCJA +'
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'KONTAKT'
-                )
-            )
-        ),
-        _react2.default.createElement(
-            'div',
-            { className: 'content' },
-            _react2.default.createElement(
-                'div',
-                { className: 'one' },
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    'Witamy na stronie firmy Substancja.'
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    'Po\u0142\u0105czyli\u015Bmy potencja\u0142 dw\xF3ch substancji: agencji reklamowej i drukarni. Artystyczny \u015Bwiat kreacji mo\u017Ce wi\u0119c korzysta\u0107 z ca\u0142ej palety precyzyjnych technologii wyra\u017Cania my\u015Bli i koncepcji. Co to oznacza dla naszych klient\xF3w? Przede wszystkim ni\u017Csze koszty produkcji reklam (typu: stojaki roll up, banery reklamowe, naklejki, plakaty itd.) oraz du\u017C\u0105 oszcz\u0119dno\u015B\u0107 czasu. \u0141atwiej jest tak\u017Ce wyeliminowa\u0107 wszelkie problemy, wyst\u0119puj\u0105ce cz\u0119sto na linii agencja reklamowa - drukarnia. Naszym g\u0142\xF3wnym obszarem dzia\u0142ania jest Warszawa i jej okolice ale wsp\xF3\u0142pracujemy tak\u017Ce z wieloma firmami z ca\u0142ej Polski oraz z zagranicy. "Substancja" to:'
-                )
-            ),
-            _react2.default.createElement(
-                'div',
-                { className: 'two' },
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    'Druk wielkoformatowy'
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    'Nasza drukarnia wielkoformatowa specjalizuje si\u0119 w r\xF3\u017Cnego rodzaju stojakach reklamowych typu roll up, \u015Bcankach POP-UP oraz innych produktach gdzie wa\u017Cna jest przede wszystkim jako\u015B\u0107 druku. Oczywi\u015Bcie produkujemy tak\u017Ce banery reklamowe, naklejki oraz plakaty. Drukujemy na sprz\u0119cie marki Roland o maksymalnej rozdzielczo\u015Bci 1440 dpi. Zawsze korzystamy z wysokich rozdzielczo\u015Bci i odpowiednich profili kolorystycznych, dzi\u0119ki czemu uzyskujemy fotograficzn\u0105 jako\u015B\u0107 wydruk\xF3w oraz eliminujemy wszelakie wady, jak cho\u0107by paskowanie itp..'
-                )
-            ),
-            _react2.default.createElement('div', { className: 'three' }),
-            _react2.default.createElement('div', { className: 'four' })
-        )
+        null,
+        _react2.default.createElement(_Header.Header, null)
     ), document.getElementById('app'));
-
-    var bb = document.querySelector('.butt');
-    var active = document.querySelector('.first');
-    var defaul = document.querySelector('.second');
-
-    bb.addEventListener('click', function (event) {
-        event.preventDefault();
-
-        active.classList.toggle('active-state1');
-        active.classList.toggle('default-state1');
-        defaul.classList.toggle('active-state');
-        defaul.classList.toggle('default-state');
-    });
 });
+
+/***/ }),
+/* 182 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.HeaderElement = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(80);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(79);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var HeaderElement = exports.HeaderElement = function (_React$Component) {
+    _inherits(HeaderElement, _React$Component);
+
+    function HeaderElement(props) {
+        _classCallCheck(this, HeaderElement);
+
+        var _this = _possibleConstructorReturn(this, (HeaderElement.__proto__ || Object.getPrototypeOf(HeaderElement)).call(this, props));
+
+        _this.changeBar = function () {
+            console.log(_this.state.myKey);
+            _this.props.handleStartClick(_this.state.myKey);
+        };
+
+        _this.shadow = function () {
+            _this.setState({
+                shadowOn: true
+            });
+        };
+
+        _this.shadowOff = function () {
+            _this.setState({
+                shadowOn: false
+            });
+        };
+
+        _this.state = {
+            myKey: _this.props.myKey,
+            shadowOn: false
+        };
+        return _this;
+    }
+
+    _createClass(HeaderElement, [{
+        key: 'render',
+        value: function render() {
+            if (this.props.page === this.state.myKey) {
+                return _react2.default.createElement(
+                    'li',
+                    { myKey: this.state.myKey, onMouseLeave: this.shadowOff },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'cube shadow' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'active-state1 first' },
+                            _react2.default.createElement(
+                                'span',
+                                null,
+                                this.props.index
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'default-state second' },
+                            _react2.default.createElement(
+                                'span',
+                                null,
+                                this.props.index
+                            )
+                        )
+                    )
+                );
+            } else if (this.state.shadowOn === false) {
+                return _react2.default.createElement(
+                    'li',
+                    { myKey: this.state.myKey, onClick: this.changeBar, onMouseEnter: this.shadow },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'cube shadowNone' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'default-state1 first' },
+                            _react2.default.createElement(
+                                'span',
+                                null,
+                                this.props.index
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'active-state second' },
+                            _react2.default.createElement(
+                                'span',
+                                null,
+                                this.props.index
+                            )
+                        )
+                    )
+                );
+            } else if (this.state.shadowOn === true) {
+                return _react2.default.createElement(
+                    'li',
+                    { myKey: this.state.myKey, onClick: this.changeBar, onMouseLeave: this.shadowOff },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'cube shadow' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'default-state1 first' },
+                            _react2.default.createElement(
+                                'span',
+                                null,
+                                this.props.index
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'active-state second' },
+                            _react2.default.createElement(
+                                'span',
+                                null,
+                                this.props.index
+                            )
+                        )
+                    )
+                );
+            }
+        }
+    }]);
+
+    return HeaderElement;
+}(_react2.default.Component);
+
+/***/ }),
+/* 183 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Main = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(80);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(79);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Main = exports.Main = function (_React$Component) {
+  _inherits(Main, _React$Component);
+
+  function Main() {
+    _classCallCheck(this, Main);
+
+    return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
+  }
+
+  _createClass(Main, [{
+    key: 'render',
+    value: function render() {
+      if (this.props.page !== "Main") return null;
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'article',
+            null,
+            'Druk wielkoformatowy Nasza drukarnia wielkoformatowa specjalizuje si\u0119 w r\xF3\u017Cnego rodzaju stojakach reklamowych typu roll up, \u015Bcankach POP-UP oraz innych produktach gdzie wa\u017Cna jest przede wszystkim jako\u015B\u0107 druku. Oczywi\u015Bcie produkujemy tak\u017Ce banery reklamowe, naklejki oraz plakaty. Drukujemy na sprz\u0119cie marki Roland o maksymalnej rozdzielczo\u015Bci 1440 dpi. Zawsze korzystamy z wysokich rozdzielczo\u015Bci i odpowiednich profili kolorystycznych, dzi\u0119ki czemu uzyskujemy fotograficzn\u0105 jako\u015B\u0107 wydruk\xF3w oraz eliminujemy wszelakie wady, jak cho\u0107by paskowanie itp..'
+          ),
+          _react2.default.createElement(
+            'article',
+            null,
+            'Druk w ma\u0142ym formacie W zale\u017Cno\u015Bci od nak\u0142ad\xF3w, termin\xF3w realizacji oraz mo\u017Cliwo\u015Bci technologicznych wykorzystujemy druk cyfrowy lub offsetowy. Drukujemy szerok\u0105 palet\u0119 produkt\xF3w takich jak: ulotki, wizyt\xF3wki, foldery, kalendarze itp. Posiadamy r\xF3wnie\u017C profesjonalny sprz\u0119t introligatorski pozwalaj\u0105cy na estetyczne wyka\u0144czanie prac.'
+          ),
+          _react2.default.createElement(
+            'article',
+            null,
+            'Studio reklamy Do wszystkich naszych produkt\xF3w oferujemy mo\u017Cliwo\u015B\u0107 stworzenia indywidualnego projektu. Wi\u0119cej szczeg\xF3\u0142\xF3w w zak\u0142adce Projekty. Dzia\u0142amy tak\u017Ce jak klasyczna agencja reklamowa wi\u0119c nie ograniczamy si\u0119 tylko do produkt\xF3w kt\xF3re sami bezpo\u015Brednio produkujemy. Mo\u017Cesz nam zleci\u0107 stworzenie i przeprowadzenie ca\u0142ej kampanii reklamowej lub po prostu oszcz\u0119dzi\u0107 czas i zam\xF3wi\u0107 ca\u0142y wachlarz produkt\xF3w zwi\u0105zanych z reklam\u0105 w jednym miejscu a nie zleca\u0107 je w wielu r\xF3\u017Cnych firmach.'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'header2' },
+          ' ',
+          _react2.default.createElement('img', { src: './img/promocja.jpg' })
+        )
+      );
+    }
+  }]);
+
+  return Main;
+}(_react2.default.Component);
+
+/***/ }),
+/* 184 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Offer = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(80);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(79);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Offer = exports.Offer = function (_React$Component) {
+  _inherits(Offer, _React$Component);
+
+  function Offer() {
+    _classCallCheck(this, Offer);
+
+    return _possibleConstructorReturn(this, (Offer.__proto__ || Object.getPrototypeOf(Offer)).apply(this, arguments));
+  }
+
+  _createClass(Offer, [{
+    key: 'render',
+    value: function render() {
+      if (this.props.page !== "Offer") return null;
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'header2' },
+        ' Oferta',
+        _react2.default.createElement('img', { src: './img/promocja.jpg' })
+      );
+    }
+  }]);
+
+  return Offer;
+}(_react2.default.Component);
+
+/***/ }),
+/* 185 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Orders = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(80);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(79);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Orders = exports.Orders = function (_React$Component) {
+  _inherits(Orders, _React$Component);
+
+  function Orders() {
+    _classCallCheck(this, Orders);
+
+    return _possibleConstructorReturn(this, (Orders.__proto__ || Object.getPrototypeOf(Orders)).apply(this, arguments));
+  }
+
+  _createClass(Orders, [{
+    key: 'render',
+    value: function render() {
+      if (this.props.page !== "Orders") return null;
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'header2' },
+        ' Zam\xF3wienia',
+        _react2.default.createElement('img', { src: './img/promocja.jpg' })
+      );
+    }
+  }]);
+
+  return Orders;
+}(_react2.default.Component);
+
+/***/ }),
+/* 186 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Portfolio = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(80);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(79);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Portfolio = exports.Portfolio = function (_React$Component) {
+  _inherits(Portfolio, _React$Component);
+
+  function Portfolio() {
+    _classCallCheck(this, Portfolio);
+
+    return _possibleConstructorReturn(this, (Portfolio.__proto__ || Object.getPrototypeOf(Portfolio)).apply(this, arguments));
+  }
+
+  _createClass(Portfolio, [{
+    key: 'render',
+    value: function render() {
+      if (this.props.page !== "Portfolio") return null;
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'header2' },
+        ' Portfolio',
+        _react2.default.createElement('img', { src: './img/promocja.jpg' })
+      );
+    }
+  }]);
+
+  return Portfolio;
+}(_react2.default.Component);
+
+/***/ }),
+/* 187 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.More = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(80);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(79);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var More = exports.More = function (_React$Component) {
+  _inherits(More, _React$Component);
+
+  function More() {
+    _classCallCheck(this, More);
+
+    return _possibleConstructorReturn(this, (More.__proto__ || Object.getPrototypeOf(More)).apply(this, arguments));
+  }
+
+  _createClass(More, [{
+    key: 'render',
+    value: function render() {
+      if (this.props.page !== "More") return null;
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'header2' },
+        ' Substancja+',
+        _react2.default.createElement('img', { src: './img/promocja.jpg' })
+      );
+    }
+  }]);
+
+  return More;
+}(_react2.default.Component);
+
+/***/ }),
+/* 188 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Contact = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(80);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(79);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Contact = exports.Contact = function (_React$Component) {
+  _inherits(Contact, _React$Component);
+
+  function Contact() {
+    _classCallCheck(this, Contact);
+
+    return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+  }
+
+  _createClass(Contact, [{
+    key: 'render',
+    value: function render() {
+      if (this.props.page !== "Contact") return null;
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'header2' },
+        ' Kontakt',
+        _react2.default.createElement('img', { src: './img/promocja.jpg' })
+      );
+    }
+  }]);
+
+  return Contact;
+}(_react2.default.Component);
+
+/***/ }),
+/* 189 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Header = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(80);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(79);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _HeadingComponent = __webpack_require__(182);
+
+var _MainContent = __webpack_require__(183);
+
+var _Offer = __webpack_require__(184);
+
+var _Orders = __webpack_require__(185);
+
+var _Portfolio = __webpack_require__(186);
+
+var _More = __webpack_require__(187);
+
+var _Contact = __webpack_require__(188);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Header = exports.Header = function (_React$Component) {
+    _inherits(Header, _React$Component);
+
+    function Header(props) {
+        _classCallCheck(this, Header);
+
+        var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
+
+        _this.handleStartClick = function (attr1) {
+
+            _this.setState({
+                page: attr1
+
+            });
+        };
+
+        _this.state = {
+            page: "Main",
+            buttonsText: [["Home", "Main"], ["Oferta", "Offer"], ["Portfolio", "Portfolio"], ["Zamówienia", "Orders"], ["Substancja+", "More"], ["Kontakt", "Contact"]]
+        };
+        return _this;
+    }
+
+    _createClass(Header, [{
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var menu = this.state.buttonsText.map(function (element, index) {
+
+                return _react2.default.createElement(_HeadingComponent.HeaderElement, { key: index, myKey: _this2.state.buttonsText[index][1], index: _this2.state.buttonsText[index][0], page: _this2.state.page, handleStartClick: _this2.handleStartClick });
+            });
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: 'slider' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'header' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'navi' },
+                            _react2.default.createElement('img', { src: './img/logo.png' }),
+                            _react2.default.createElement(
+                                'ul',
+                                null,
+                                menu
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'four' },
+                        'Witamy na stronie firmy Substancja. Po\u0142\u0105czyli\u015Bmy potencja\u0142 dw\xF3ch substancji: agencji reklamowej i drukarni. Artystyczny \u015Bwiat kreacji mo\u017Ce wi\u0119c korzysta\u0107 z ca\u0142ej palety precyzyjnych technologii wyra\u017Cania my\u015Bli i koncepcji. Co to oznacza dla naszych klient\xF3w? Przede wszystkim ni\u017Csze koszty produkcji reklam (typu: stojaki roll up, banery reklamowe, naklejki, plakaty itd.) oraz du\u017C\u0105 oszcz\u0119dno\u015B\u0107 czasu. \u0141atwiej jest tak\u017Ce wyeliminowa\u0107 wszelkie problemy, wyst\u0119puj\u0105ce cz\u0119sto na linii agencja reklamowa - drukarnia.'
+                    )
+                ),
+                _react2.default.createElement('div', { className: 'three' }),
+                _react2.default.createElement(_MainContent.Main, { page: this.state.page }),
+                _react2.default.createElement(_Offer.Offer, { page: this.state.page }),
+                _react2.default.createElement(_Portfolio.Portfolio, { page: this.state.page }),
+                _react2.default.createElement(_Orders.Orders, { page: this.state.page }),
+                _react2.default.createElement(_More.More, { page: this.state.page }),
+                _react2.default.createElement(_Contact.Contact, { page: this.state.page }),
+                _react2.default.createElement('div', { className: 'footer' })
+            );
+        }
+    }]);
+
+    return Header;
+}(_react2.default.Component);
 
 /***/ })
 /******/ ]);
