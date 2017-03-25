@@ -8,17 +8,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
     ReactDOM.render(
 
-        <div>
 
-
-          <Header/>
-
-
-    </div>, document.getElementById('app'));
-
-
+          <Header/>, document.getElementById('app'));
 
 
 });

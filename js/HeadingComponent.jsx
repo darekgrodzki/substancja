@@ -12,7 +12,7 @@ export class HeaderElement extends React.Component{
   }
 
   changeBar = () => {
-    console.log(this.state.myKey);
+    
     this.props.handleStartClick(this.state.myKey);
 
   }
@@ -39,7 +39,7 @@ export class HeaderElement extends React.Component{
           </div>
       </li>} else if(this.state.shadowOn === false){
       return <li myKey={this.state.myKey} onClick={this.changeBar} onMouseEnter = {this.shadow} >
-          <div className="cube shadowNone">
+          <div className="cube">
               <div className="default-state1 first">
                   <span>{this.props.index}</span>
               </div>

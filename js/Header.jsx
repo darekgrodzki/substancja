@@ -57,17 +57,17 @@ render(){
   });
 
 
-return <div><div className="slider">
-    <div className="header">
+return <div><header style={{backgroundImage: "url('./img/background1.jpg')"}}>
+    <div className="header" >
 
-        <div className="navi">
+        <nav>
             <img src="./img/logo.png"/>
 
             <ul>{menu}</ul>
-        </div>
+        </nav>
     </div>
-    <div className="four">Witamy na stronie firmy Substancja. Połączyliśmy potencjał dwóch substancji: agencji reklamowej i drukarni. Artystyczny świat kreacji może więc korzystać z całej palety precyzyjnych technologii wyrażania myśli i koncepcji. Co to oznacza dla naszych klientów? Przede wszystkim niższe koszty produkcji reklam (typu: stojaki roll up, banery reklamowe, naklejki, plakaty itd.) oraz dużą oszczędność czasu. Łatwiej jest także wyeliminować wszelkie problemy, występujące często na linii agencja reklamowa - drukarnia.</div>
-</div>
+    <div className="four"><p>Połączyliśmy potencjał dwóch substancji: agencji reklamowej i drukarni. Artystyczny świat kreacji może więc korzystać z całej palety precyzyjnych technologii wyrażania myśli i koncepcji. Co to oznacza dla naszych klientów? Przede wszystkim niższe koszty produkcji reklam (typu: stojaki roll up, banery reklamowe, naklejki, plakaty itd.) oraz dużą oszczędność czasu. Łatwiej jest także wyeliminować wszelkie problemy, występujące często na linii agencja reklamowa - drukarnia.</p></div>
+</header>
 <div className="three"></div>
  <Main page = {this.state.page}/>
  <Offer page = {this.state.page}/>
@@ -75,7 +75,7 @@ return <div><div className="slider">
  <Orders page = {this.state.page}/>
  <More page = {this.state.page}/>
  <Contact page = {this.state.page}/>
- <div className="footer"></div>
+ <footer></footer>
 
 </div>
 }
