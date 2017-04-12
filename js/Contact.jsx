@@ -13,7 +13,7 @@ export class Contact extends React.Component {
                 <img src="./img/telBig.png"/>
                 <h1>tel.: 022 760 33 16<br/>
                     tel.kom.: 691 75 62 75<br/>
-                    <a href="mailto:info@substancja.eu">infosubstancja.eu</a>
+                  <a href="mailto:info@substancja.eu">info@substancja.eu</a>
                 </h1>
                 <img src="./img/mailBig.png"/>
 
@@ -21,10 +21,10 @@ export class Contact extends React.Component {
 
             <p>Brzeziny 1L, 05-074 Halinów</p>
             <p>GPS: 52°11'47''N, 21°22'27''E</p>
-            <p>pn.-pt.
-                <strong>9-17</strong><br/>
+            <p>pn. - pt.
+                <strong> 9 - 17</strong><br/>
                 sob.
-                <strong>10-13</strong><br/>
+                <strong> 10 - 13</strong><br/>
                 (w soboty prosimy o kontakt przed przyjazdem)
             </p>
 

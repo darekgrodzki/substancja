@@ -20,7 +20,7 @@ export class ArticleOne extends React.Component {
         if (this.state.articleOne === true) {
             return <div className="rotate" onMouseOut={this.art1back}>
                 <article className="articleOne back">
-                    <img src="./img/1a.png"/>
+                    <img src="./img/002.png"/>
                     <h2>Druk wielkoformatowy</h2><br/>
                     <h3>Roll up'y</h3><br/>
                     <h3>Ścianki reklamowe</h3><br/>
@@ -32,7 +32,7 @@ export class ArticleOne extends React.Component {
                     <p>Dowiedz się więcej</p>
                 </article>
                 <article className="articleOne front">
-                    <img src="./img/1a.png"/>
+                    <img src="./img/002.png"/>
                     <h2>Druk wielkoformatowy</h2><br/>
                     <h4>
                       Nasza drukarnia wielkoformatowa specjalizuje się w różnego rodzaju stojakach reklamowych typu roll up, ścankach POP-UP oraz innych produktach gdzie ważna jest przede wszystkim jakość druku. Oczywiście produkujemy także banery reklamowe, naklejki oraz plakaty. Drukujemy na sprzęcie marki Roland o maksymalnej rozdzielczości 1440 dpi. Zawsze korzystamy z wysokich rozdzielczości i odpowiednich profili kolorystycznych, dzięki czemu uzyskujemy fotograficzną jakość wydruków oraz eliminujemy wszelakie wady, jak choćby paskowanie itp..
@@ -42,7 +42,7 @@ export class ArticleOne extends React.Component {
         } else {
             return <div className="rotate" onMouseOver={this.art2back}>
                 <article className="articleOne front">
-                    <img src="./img/1a.png"/>
+                    <img src="./img/002.png"/>
                     <h2>Druk wielkoformatowy</h2><br/>
                     <h3>Roll up'y</h3><br/>
                     <h3>Ścianki reklamowe</h3><br/>
@@ -54,7 +54,7 @@ export class ArticleOne extends React.Component {
                     <p>Dowiedz się więcej</p>
                 </article>
                 <article className="articleOne back">
-                    <img src="./img/1a.png"/>
+                    <img src="./img/002.png"/>
                     <h2>Druk wielkoformatowy</h2><br/>
                     <h4>
                       Nasza drukarnia wielkoformatowa specjalizuje się w różnego rodzaju stojakach reklamowych typu roll up, ścankach POP-UP oraz innych produktach gdzie ważna jest przede wszystkim jakość druku. Oczywiście produkujemy także banery reklamowe, naklejki oraz plakaty. Drukujemy na sprzęcie marki Roland o maksymalnej rozdzielczości 1440 dpi. Zawsze korzystamy z wysokich rozdzielczości i odpowiednich profili kolorystycznych, dzięki czemu uzyskujemy fotograficzną jakość wydruków oraz eliminujemy wszelakie wady, jak choćby paskowanie itp..

@@ -1,0 +1,152 @@
+@import 'variables';
+
+.portfolio {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1vw;
+    background-color: dimgray;
+    justify-content: center;
+
+    h2 {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 10vw 3vw;
+        font-weight: 300;
+        font-size: 3rem;
+        color: white;
+    }
+
+    .image1 {
+        display: block;
+        height: auto;
+        margin: 0 6vw;
+        width: 15%;
+        height: 19vw;
+        margin-bottom: 10vw;
+    }
+
+    .small {
+        position: relative;
+
+        img {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            height: auto;
+            transition: 300ms;
+            z-index: 0;
+            border: 10px solid white;
+        }
+    }
+
+    .big {
+        position: relative;
+
+        img {
+            position: absolute;
+            width: 200%;
+            transform: translateX(-8vw) translateY(-10vw);
+            transition: 1s;
+            z-index: 1;
+            border: 15px solid white;
+        }
+    }
+
+    .imageHorizontal {
+        display: block;
+        height: auto;
+        margin: 0 4vw;
+        width: 20%;
+        height: 19vw;
+        margin-bottom: 10vw;
+    }
+
+    .smallHorizontal {
+        position: relative;
+
+        img {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            height: auto;
+            transition: 300ms;
+            z-index: 0;
+            border: 10px solid white;
+        }
+    }
+
+    .bigHorizontal {
+        position: relative;
+
+        img {
+            position: absolute;
+            width: 200%;
+            transform: translateX(-10vw) translateY(-7vw);
+            transition: 1s;
+            z-index: 1;
+            border: 15px solid white;
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    .portfolio {
+        .image1 {
+            margin: 3vw 5vw;
+            width: 30%;
+            height: 40vw;
+        }
+
+        .big {
+            img {
+                width: 150%;
+                transform: translateX(-8vw) translateY(-9vw);
+            }
+        }
+
+        .imageHorizontal {
+            margin: 3vw 2vw;
+            width: 35%;
+            height: 30vw;
+        }
+
+        .bigHorizontal {
+            img {
+                width: 170%;
+                transform: translateX(-12vw) translateY(-9vw);
+            }
+        }
+    }
+}
+@media (max-width:700px) {
+    .portfolio {
+        .image1 {
+            width: 70%;
+            height: 90vw;
+        }
+
+        .big {
+            img {
+                width: 100%;
+                transform: translateX(0vw) translateY(0vw);
+                border: 10px solid white;
+            }
+        }
+
+        .imageHorizontal {
+            width: 80%;
+            height: 60vw;
+        }
+
+        .bigHorizontal {
+            img {
+                width: 100%;
+                transform: translateX(0vw) translateY(0vw);
+                border: 10px solid white;
+            }
+        }
+    }
+
+}

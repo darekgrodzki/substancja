@@ -19,12 +19,12 @@ export class PortfolioElement extends React.Component {
     }
     render() {
             if (this.state.hover === false){
-            return <div className="image" onMouseEnter={this.hover}><div className="small">
+            return <div className="image1" onMouseEnter={this.hover}><div className="small">
                     {this.props.myKey}
                     </div>
                 </div>
               } else {
-                return <div className="image" onMouseLeave={this.hoverOff}><div className="big">
+                return <div className="image1" onMouseLeave={this.hoverOff}><div className="big">
                         {this.props.myKey}
                         </div>
                     </div>

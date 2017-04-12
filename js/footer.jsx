@@ -6,7 +6,7 @@ export class Footer extends React.Component {
     render() {
 
         return <footer>
-            <nav>
+            <section>
                 <div>
                     <a href="https://www.facebook.com/Substancja-317585418285897/" target="_blank">
                         <img src="./img/fb.png"/>
@@ -32,7 +32,7 @@ export class Footer extends React.Component {
                         <img src="./img/logo.png"/>
                     </a>
                 </div>
-            </nav>
+            </section>
         </footer>;
 
     }

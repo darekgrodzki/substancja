@@ -20,7 +20,7 @@ export class ArticleTwo extends React.Component {
         if (this.state.articleOne === true) {
             return <div className="rotate" onMouseOut={this.art1back}>
                 <article className="articleOne back">
-                    <img src="./img/2a.png"/>
+                    <img src="./img/001.png"/>
                     <h2>Druk w małym formacie</h2><br/>
                     <h3>Ulotki</h3><br/>
                     <h3>Wizytówki</h3><br/>
@@ -33,7 +33,7 @@ export class ArticleTwo extends React.Component {
 
                 </article>
                 <article className="articleOne front">
-                    <img src="./img/2a.png"/>
+                    <img src="./img/001.png"/>
                     <h2>Druk w małym formacie</h2><br/>
                     <h4>
                       W zależności od nakładów, terminów realizacji oraz możliwości technologicznych wykorzystujemy druk cyfrowy lub offsetowy. Drukujemy szeroką paletę produktów takich jak: ulotki, wizytówki, foldery, kalendarze itp. Posiadamy również profesjonalny sprzęt introligatorski pozwalający na estetyczne wykańczanie prac.
@@ -44,7 +44,7 @@ export class ArticleTwo extends React.Component {
         } else {
             return <div className="rotate" onMouseOver={this.art2back}>
                 <article className="articleOne front">
-                    <img src="./img/2a.png"/>
+                    <img src="./img/001.png"/>
                     <h2>Druk w małym formacie</h2><br/>
                     <h3>Ulotki</h3><br/>
                     <h3>Wizytówki</h3><br/>
@@ -57,7 +57,7 @@ export class ArticleTwo extends React.Component {
 
                 </article>
                 <article className="articleOne back">
-                    <img src="./img/2a.png"/>
+                    <img src="./img/001.png"/>
                     <h2>Druk w małym formacie</h2><br/>
                       <h4>
                         W zależności od nakładów, terminów realizacji oraz możliwości technologicznych wykorzystujemy druk cyfrowy lub offsetowy. Drukujemy szeroką paletę produktów takich jak: ulotki, wizytówki, foldery, kalendarze itp. Posiadamy również profesjonalny sprzęt introligatorski pozwalający na estetyczne wykańczanie prac.
