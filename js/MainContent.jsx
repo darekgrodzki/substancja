@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import LazyLoad from 'react-lazy-load';
 import {ArticleOne} from './articleOne.jsx';
 import {ArticleTwo} from './articleTwo.jsx';
 import {ArticleThree} from './articleThree.jsx';
@@ -8,7 +9,7 @@ export class Main extends React.Component {
 
     render() {
 
-        if (this.props.page !== "Main")
+        if (this.props.page !== "Home")
             return null;
 
         return <div>
@@ -33,15 +34,17 @@ export class Main extends React.Component {
 
                 </p><br/>
 
-                <p>
-                    <iframe src="https://www.youtube.com/embed/uoP-ro_PReY" frameBorder="0" allowFullScreen></iframe>
-                </p>
+                <div className="iframe">
+                    <LazyLoad>
+                        <iframe src="https://www.youtube.com/embed/uoP-ro_PReY" frameBorder="0" allowFullScreen></iframe>
+                    </LazyLoad>
+                </div>
                 <h2>21.01.2015</h2>
                 <h2>Zmieniamy nasze logo :)</h2>
                 <p>W zwiąku z tym, że pragniemy ciągle się rozwijać i udoskonalać działalność naszej firmy, postanowiliśmy trochę odświeżyć nasz logotyp. Teraz będzie bardziej kolorowy i mamy nadzieję, że będzie się Wam bardziej podobał.
                     <br/>
                     A oto nasze nowe logo:</p>
-                  <p><img src="img/logo.png" alt="logo Substancja"/><br/>
+                <p><img src="img/logo.png" alt="logo Substancja"/><br/>
                     <br/>
                 </p>
                 <h2>29.11.2013</h2>
@@ -58,14 +61,18 @@ export class Main extends React.Component {
                     dla sierocińca. Dzięki niemu chore dzieci mogą szybko dotrzeć do szpitala po wyboistych zambijskich drogach.<br/>
                     <br/>
                     My dołożyliśmy swoją cegiełkę do tego szlachetnego przedsięwzięcia. Zaprojektowaliśmy i wydrukowaliśmy
-                    <strong> naklejki na ambulans </strong>, dzięki czemu jest on dobrze oznakowany i widoczny. Teraz nawet lwy przed nim uciekają :)<br/>
+                    <strong> naklejki na ambulans</strong>, dzięki czemu jest on dobrze oznakowany i widoczny. Teraz nawet lwy przed nim uciekają :)<br/>
                     <br/>
                     Staramy się też pomagać przy realizacji kolejnych projektów, do czego i Was zachęcamy!
                     <br/>
                     Więcej szczegółów na stronie
                     <a href="http://www.fundacjakasisi.pl/" rel="nofollow" target="_blank">www.fundacjakasisi.pl</a>
                 </p><br/><br/>
-                <iframe src="https://www.youtube.com/embed/_avrHRefwi4" frameBorder="0" allowFullScreen></iframe>
+                <div className="iframe">
+                    <LazyLoad>
+                        <iframe src="https://www.youtube.com/embed/_avrHRefwi4" frameBorder="0" allowFullScreen></iframe>
+                    </LazyLoad>
+                </div>
             </div>
         </div>
 

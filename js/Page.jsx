@@ -13,19 +13,10 @@ export class Page extends React.Component {
         super(props);
 
         this.state = {
-            page: "Main",
+            page: "Home",
             buttonsText: [
-                [
-                    "Home", "Main"
-                ],
-                [
-                    "Oferta", "Offer"
-                ],
-                [
-                    "Portfolio", "Portfolio"
-                ],
 
-                ["Kontakt", "Contact"]
+                "Home", "Oferta", "Portfolio", "Kontakt"
             ],
             hamburgerClass: false
         };
@@ -39,44 +30,30 @@ export class Page extends React.Component {
     changeClass = () => {
 
         this.setState({hamburgerClass: true})
-        
+
     }
     changeClassOff = () => {
 
         this.setState({hamburgerClass: false})
 
     }
-    changeMain = () => {
+    handleClick = (event) => {
 
-        this.setState({page: "Main"}),
-        this.setState({hamburgerClass: false})
-
-    }
-    changeOffer = () => {
-
-        this.setState({page: "Offer"}),
-        this.setState({hamburgerClass: false})
-
-    }
-    changePortfolio = () => {
-
-        this.setState({page: "Portfolio"}),
-        this.setState({hamburgerClass: false})
-
-    }
-    changeContact = () => {
-
-        this.setState({page: "Contact"}),
-        this.setState({hamburgerClass: false})
-
+        this.setState({page: event, hamburgerClass: false})
     }
     render() {
 
         let menu = this.state.buttonsText.map((element, index) => {
 
-            return <HeaderElement key={index} myKey={this.state.buttonsText[index][1]} index={this.state.buttonsText[index][0]} page={this.state.page} handleStartClick={this.handleStartClick}/>
+            return <HeaderElement key={index} myKey={this.state.buttonsText[index]} page={this.state.page} handleStartClick={this.handleStartClick}/>
 
         });
+        let menuHamburger = this.state.buttonsText.map((element, index) => {
+
+            return <div key={this.state.buttonsText[index]} onClick={e => this.handleClick(element)}>{element}</div>
+
+        });
+
         if (this.state.hamburgerClass === false) {
             return <div>
                 <header style={{
@@ -136,10 +113,7 @@ export class Page extends React.Component {
                                 </div>
                             </div>
                             <div className="hamburgerNavi">
-                                <div onClick={this.changeMain}>Home</div>
-                                <div onClick={this.changeOffer}>Oferta</div>
-                                <div onClick={this.changePortfolio}>Portfolio</div>
-                              <div onClick={this.changeContact}>Kontakt</div>
+                                {menuHamburger}
                             </div>
                         </nav>
                     </div>

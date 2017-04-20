@@ -17,7 +17,13 @@ module.exports = {
                 test: /\.scss$/,
                 loaders: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader','resolve-url-loader', 'sass-loader?sourceMap']
             },
-
+            {
+              test   : /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+              loader : 'file-loader',
+              query: {
+                outputPath: "/myFonts/"
+              }
+       }
         ]
     }
 }

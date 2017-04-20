@@ -28,10 +28,10 @@ export class HeaderElement extends React.Component {
             return <li onMouseLeave={this.shadowOff}>
                 <div className="cube shadow">
                     <div className="active-state1 first">
-                        <span>{this.props.index}</span>
+                        <span>{this.state.myKey}</span>
                     </div>
                     <div className="default-state second">
-                        <span>{this.props.index}</span>
+                        <span>{this.state.myKey}</span>
                     </div>
                 </div>
             </li>
@@ -39,10 +39,10 @@ export class HeaderElement extends React.Component {
             return <li onClick={this.changeBar} onMouseEnter={this.shadow}>
                 <div className="cube">
                     <div className="default-state1 first">
-                        <span>{this.props.index}</span>
+                        <span>{this.props.myKey}</span>
                     </div>
                     <div className="active-state second">
-                        <span>{this.props.index}</span>
+                        <span>{this.props.myKey}</span>
                     </div>
                 </div>
             </li>
@@ -50,10 +50,10 @@ export class HeaderElement extends React.Component {
             return <li onClick={this.changeBar} onMouseLeave={this.shadowOff}>
                 <div className="cube shadow">
                     <div className="default-state1 first">
-                        <span>{this.props.index}</span>
+                        <span>{this.props.myKey}</span>
                     </div>
                     <div className="active-state second">
-                        <span>{this.props.index}</span>
+                        <span>{this.props.myKey}</span>
                     </div>
                 </div>
             </li>

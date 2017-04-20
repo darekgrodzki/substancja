@@ -4,11 +4,54 @@ import ReactDOM from 'react-dom';
 export class Offer extends React.Component{
 
 
+  constructor(props) {
+      super(props);
+
+      this.state = {
+          page: "Main",
+          offerPage: [
+            "Zamówienia",
+            "Bannery reklamowe",
+            "Ścianki reklamowe",
+            "Stojaki reklamowe",
+            "Plakaty i fototapety",
+            "Naklejki",
+            "Oklejanie witryn",
+            "Oklejanie samochodów",
+            "Wizytówki",
+            "Ulotki",
+            "Projekty",
+            "Projekty2"
+          ]
+
+      };
+  }
+  handleClick  = (event) => {
+
+      this.setState({page: event})
+    }
+
+
   render() {
-  if(this.props.page !== "Offer")
+  if(this.props.page !== "Oferta")
   return null;
 
+  let menuOffer = this.state.offerPage.map((element, index) => {
+
+      if(this.state.offerPage[index]===this.state.page){
+
+      return <div className = "blue" key={this.state.offerPage[index]}
+      onClick={e => this.handleClick(element)}>{element}</div>;
+
+      } else {
+
+      return <div className = "red" key={this.state.offerPage[index]}
+      onClick={e => this.handleClick(element)}>{element}</div>;}
+
+  });
+
   return <div className="orders">
+    <div className="naviOffer">{menuOffer}</div>
     <h1>Zamówienia</h1>
     <h2>Jak składać zamówienia:</h2>
     <p>- mailowo: na adres <a href="mailto:info@substancja.eu">info@substancja.eu</a>, podając dokładne informacje zamawianego produktu ( wymiar, ilość, rodzaj materiału itp.), dane kontaktowe oraz dane do faktury. Prosimy także o podanie formy płatności oraz sposobu odbioru.<br />

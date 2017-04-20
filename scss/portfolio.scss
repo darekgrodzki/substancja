@@ -32,8 +32,9 @@
 
         img {
             position: absolute;
-            width: 100%;
+            top: 0;
             left: 0;
+            width: 100%;
             height: auto;
             transition: 300ms;
             z-index: 0;
@@ -46,8 +47,11 @@
 
         img {
             position: absolute;
+            top: 0;
+            left: 0;
             width: 200%;
             transform: translateX(-8vw) translateY(-10vw);
+            -ms-transform: translateX(-25%) translateY(-25%);
             transition: 1s;
             z-index: 1;
             border: 15px solid white;
@@ -68,6 +72,8 @@
 
         img {
             position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             left: 0;
             height: auto;
@@ -82,15 +88,17 @@
 
         img {
             position: absolute;
+            top: 0;
+            left: 0;
             width: 200%;
             transform: translateX(-10vw) translateY(-7vw);
+            -ms-transform: translateX(-25%) translateY(-25%);
             transition: 1s;
             z-index: 1;
             border: 15px solid white;
         }
     }
 }
-
 @media (max-width:1000px) {
     .portfolio {
         .image1 {
@@ -148,5 +156,4 @@
             }
         }
     }
-
 }

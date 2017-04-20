@@ -60,9 +60,10 @@ export class Portfolio extends React.Component {
 
         return <div className="portfolio">
           <h2>Zapraszamy do obejrzenia galerii naszych prac.</h2>
-          
+
                       {vertical}
                       {horizontal}
+
         </div>
     }
 }

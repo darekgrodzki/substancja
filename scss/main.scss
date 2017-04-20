@@ -1,11 +1,32 @@
-@import url( 'https://fonts.googleapis.com/css?family=Ubuntu');
-@import url( 'https://fonts.googleapis.com/css?family=Ubuntu:300');
+
 @import 'variables';
 @import 'header';
 @import 'footer';
 @import 'mainContent';
 @import 'portfolio';
 @import 'contact';
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: ('../fonts/Ubuntu.woff2') format('woff2'),
+		('../fonts/Ubuntu.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: ('../fonts/Ubuntu-Light.woff2') format('woff2'),
+		('../fonts/Ubuntu-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+// @font-face {
+// 	font-family: 'Ubuntu';
+// 	src: ('../fonts/Ubuntu-LightItalic.woff2') format('woff2'),
+// 		('../fonts/Ubuntu-LightItalic.woff') format('woff');
+// 	font-weight: 300;
+// 	font-style: italic;
+// }
 
 * {
     box-sizing: border-box;
