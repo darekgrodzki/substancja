@@ -1,5 +1,5 @@
 # substancja
-www.substancja.eu
+http://test.substancja.eu
 
 
-Projekt strony www.substancja.eu
+Projekt strony firmy Substancja - w trakcie realizacji
