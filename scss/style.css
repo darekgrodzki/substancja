@@ -8,15 +8,3 @@
 	font-weight: 300;
 	font-style: normal;
 }
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
-}
-
-html {
-    font-size: 10px;
-    font-family: 'Ubuntu', sans-serif;
-}
