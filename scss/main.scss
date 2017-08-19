@@ -4,27 +4,26 @@
 @import 'mainContent';
 @import 'portfolio';
 @import 'contact';
+
+
 @font-face {
 	font-family: 'Ubuntu';
-	src: ('../fonts/Ubuntu.woff2') format('woff2'), ('../fonts/Ubuntu.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Ubuntu';
-	src: ('../fonts/Ubuntu-Light.woff2') format('woff2'), ('../fonts/Ubuntu-Light.woff') format('woff');
+	src: url('../fonts/Ubuntu-Light.eot');
+	src: url('../fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Ubuntu-Light.woff2') format('woff2'),
+		url('../fonts/Ubuntu-Light.woff') format('woff'),
+		url('../fonts/Ubuntu-Light.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
 }
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-	font-size: 10px;
-	font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
 }
