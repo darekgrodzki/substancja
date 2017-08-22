@@ -1,5 +1,5 @@
 # substancja
-http://test.substancja.eu
+https://darekgrodzki.github.io/substancja/
 
 
 Projekt strony firmy Substancja - w trakcie realizacji
